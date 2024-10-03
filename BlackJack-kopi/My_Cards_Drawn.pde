@@ -51,7 +51,7 @@ void myCardsDrawn () {
       while (e == a || e == b || e == c || e == d || e == aD || e == bD) {
         e = int(random(1, 53));
       }
-      // tildel e til et billede og en værdi
+      
       card5Img = getCardImage(e);
       kort5Værdi = getCardValue(e);
       break;
@@ -61,7 +61,7 @@ void myCardsDrawn () {
       while (f == a || f == b || f == c || f == d || f == e || f == aD || f == bD) {
         f = int(random(1, 53));
       }
-      // tildel f til et billede og en værdi
+      
       card6Img = getCardImage(f);
       kort6Værdi = getCardValue(f);
       break;
@@ -71,7 +71,7 @@ void myCardsDrawn () {
       while (g == a || g == b || g == c || g == d || g == e || g == f || g == aD || g == bD) {
         g = int(random(1, 53));
       }
-      // tildel g til et billede og en værdi
+      
       card7Img = getCardImage(g);
       kort7Værdi = getCardValue(g);
       break;

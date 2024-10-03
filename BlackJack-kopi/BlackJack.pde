@@ -47,13 +47,13 @@ int t = 0;
 int t2 = 0;
 boolean restart = false;
 
-//String ImageName = "_of_hearts.png";
+
 
 void setup() {
   size(1450, 840);
   img = loadImage("blackJack Table.jpg");
   img.resize(width, height);
-  // Hjerter
+  
 
   cardsImage();
 }
