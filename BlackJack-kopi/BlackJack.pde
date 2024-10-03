@@ -1,7 +1,6 @@
 PImage img;
 PImage cardImg, card2Img, card3Img, card4Img, card5Img, card6Img, card7Img, card8Img;
-PImage cardImgDealer, card2ImgDealer, card3ImgDealer, card4ImgDealer, card5ImgDealer, card6ImgDealer, card7ImgDealer, card8ImgDealer;
-
+PImage[] cardImgDealer = new PImage[2];
 
 int x;
 PImage AceHeart, TwoHeart, ThreeHeart, FourHeart, FiveHeart, SixHeart, SevenHeart, EightHeart, NineHeart, TenHeart, JackHeart, QueenHeart, KingHeart;
@@ -79,9 +78,9 @@ void draw() {
       cardDealer2X = cardDealer2X - 10;
     }
     image(cardImg, card1X, 500, cardW, cardH);
-    image(cardImgDealer, cardDealer1X, 300, cardW, cardH);
+    image(cardImgDealer[0], cardDealer1X, 300, cardW, cardH);
     image(card2Img, card2X, 500, cardW, cardH);
-    image(card2ImgDealer, cardDealer2X, 300, cardW, cardH);
+    image(cardImgDealer[1], cardDealer2X, 300, cardW, cardH);
     if (t2 == 0) {
       fill(0);
       rect(cardDealer2X, 300, cardW, cardH);
@@ -117,12 +116,12 @@ void draw() {
 
 
 
-if (mineSamletPoint > 21){
-  restart = true;
-}
-BlackJack();
-if (restart) {
-  restart();
-}
-// restartButton();
+  if (mineSamletPoint > 21) {
+    restart = true;
+  }
+  BlackJack();
+  if (restart) {
+    restart();
+  }
+  // restartButton();
 }

@@ -10,7 +10,7 @@ void myCardsDrawn () {
       while (aD == a) {
         aD = int(random(1, 53));
       }
-      cardImgDealer = getCardImage(aD);
+      cardImgDealer[0] = getCardImage(aD);
       kort1VærdiDealer = getCardValue(aD);
      
       b = int(random(1, 53));
@@ -24,7 +24,7 @@ void myCardsDrawn () {
       while (bD == a || bD == aD || bD == b) {
         bD = int(random(1, 53));
       }
-      card2ImgDealer = getCardImage(bD);
+      cardImgDealer[1] = getCardImage(bD);
       kort2VærdiDealer = getCardValue(bD);
       break;
 
